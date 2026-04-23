@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhura Kelapure | QA Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;background:#f8fafc;color:#0f172a}
+    a{text-decoration:none;color:inherit}
+
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      display:flex;
+      justify-content:space-between;
+      padding:15px 40px;
+      background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      z-index:1000
+    }
+    nav h2{color:#2563eb}
+    nav ul{display:flex;gap:20px;list-style:none}
+
+    .hero{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:linear-gradient(to right,#e0f2fe,#f8fafc)
+    }
+
+    .hero h1{font-size:3rem;color:#2563eb}
+    .hero p{margin-top:10px;color:#475569}
+
+    .btn{
+      margin-top:20px;
+      padding:12px 25px;
+      border-radius:30px;
+      background:#2563eb;
+      color:white;
+      border:none;
+      cursor:pointer;
+      transition:0.3s
+    }
+
+    .btn:hover{transform:scale(1.05)}
+
+    section{padding:80px 40px;max-width:1100px;margin:auto}
+
+    h2{margin-bottom:20px;color:#2563eb}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+      transition:0.3s
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.1)
+    }
+
+    .tag{
+      display:inline-block;
+      margin:5px;
+      padding:6px 12px;
+      background:#dbeafe;
+      color:#1e40af;
+      border-radius:20px;
+      font-size:12px
+    }
+
+    .contact-card p{margin:8px 0}
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#e2e8f0;
+      color:#334155
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Madhura</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1 data-aos="fade-up">Madhura Kelapure</h1>
+  <p data-aos="fade-up" data-aos-delay="200">QA Engineer | Manual + Automation | POS Domain</p>
+  <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Explore My Work</button>
+</div>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    QA Engineer with 4+ years experience in testing real-world applications like Ciferon POS. Strong in manual testing, automation, and delivering stable, bug-free systems.
+  </p>
+</section>
+
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+  <div class="grid">
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Ciferon POS</h3>
+      <p>Tested billing, inventory, and reporting modules ensuring accuracy and performance.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Admin Panel</h3>
+      <p>Complete admin testing including menu, users, add-ons, integrations.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Contactless Ordering</h3>
+      <p>QR-based ordering system tested across devices.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Mobile Apps</h3>
+      <p>Captain & Owner apps tested for real-time operations.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="card">
+    <span class="tag">Manual Testing</span>
+    <span class="tag">Automation</span>
+    <span class="tag">Selenium</span>
+    <span class="tag">TestNG</span>
+    <span class="tag">Postman</span>
+    <span class="tag">JIRA</span>
+    <span class="tag">JMeter</span>
+    <span class="tag">Agile</span>
+  </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <div class="card contact-card">
+    <p>📞 +91 8888216585</p>
+    <p>📧 kelapuremadhura@gmail.com</p>
+    <p>🔗 linkedin.com/in/madhura-kelapure-62806023b</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Madhura Kelapure</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+</body>
+</html>
